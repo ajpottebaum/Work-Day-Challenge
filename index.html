@@ -14,7 +14,7 @@
     <!-- linking fonts -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="https://use.fontawesome.com/releases/v5.8.1/gitcss/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
@@ -31,6 +31,14 @@
     <header class="jumbotron text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <div id="current_date"></p>
+        <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+        </script>
       <p id="currentDay" class="lead"></p>
     </header>
 
